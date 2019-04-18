@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class registerActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
     private TextView title_back;
     private TextView go_back;
     private Button register;
@@ -36,12 +36,10 @@ public class registerActivity extends AppCompatActivity {
         et_username=findViewById(R.id.et_username);
         et_password=findViewById(R.id.et_password);
         et_password_again=findViewById(R.id.et_password_again);
-        et_phone=findViewById(R.id.et_phone);
-        et_emaile=findViewById(R.id.et_email);
         go_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                registerActivity.this.finish();
+                RegisterActivity.this.finish();
             }
         });
 
