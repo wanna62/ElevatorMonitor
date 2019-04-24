@@ -1,7 +1,11 @@
 package com.elevator.elevatormonitor.Retrofit;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class RetrofitManager {
     private static RetrofitManager mInstance;
+    private static String baseUrl="http://172.20.17.57:8081";
 
     public static RetrofitManager getInstance() {
         if (mInstance == null) {
@@ -15,8 +19,12 @@ public class RetrofitManager {
     }
 
 
-    private void getRetrofit(){
-
+    public Retrofit getRetrofit(){
+        Retrofit mRetrofit=new Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        return mRetrofit;
     }
 
 }
