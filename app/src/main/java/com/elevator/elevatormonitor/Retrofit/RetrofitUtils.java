@@ -31,12 +31,13 @@ public class RetrofitUtils {
         }
         String jso = data.substring(0, data.length() - 1);
         RequestBody requestBody =
-                RequestBody.create(MediaType.parse("application/x-www-form-urlencoded; charset=utf-8"),jso);
+                RequestBody.create(MediaType.parse("application/x-www-form-urlencoded; charset=utf-8"), jso);
         RetrofitManager.getInstance().getRetrofit().create(UserApi.class).login(requestBody).enqueue(new Callback<BaseResponse>() {
             @Override
             public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
                 callBack.onSuccess(response);
             }
+
             @Override
             public void onFailure(Call<BaseResponse> call, Throwable t) {
                 callBack.onFail(t);
@@ -44,11 +45,28 @@ public class RetrofitUtils {
         });
     }
 
+    public static void register(String name, String phone, final CallBack callBack) {
+        RetrofitManager.getInstance().getRetrofit().create(UserApi.class).register(name, phone, "cugb").enqueue(new Callback<BaseResponse>() {
+            @Override
+            public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
+                callBack.onSuccess(response);
 
+            }
+
+            @Override
+            public void onFailure(Call<BaseResponse> call, Throwable t) {
+                callBack.onFail(t);
+
+            }
+        });
+
+
+    }
 
 
     public interface CallBack {
         void onSuccess(Response<BaseResponse> baseResponse);
+
         void onFail(Throwable t);
     }
 }

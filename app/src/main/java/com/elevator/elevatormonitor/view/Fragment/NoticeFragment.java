@@ -1,4 +1,4 @@
-package com.elevator.elevatormonitor.Fragment;
+package com.elevator.elevatormonitor.view.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

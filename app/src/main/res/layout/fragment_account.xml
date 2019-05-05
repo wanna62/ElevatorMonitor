@@ -1,14 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/account"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="我的"
-        android:textColor="@color/theme"
-        android:textSize="23sp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <View
+               android:background="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="1px"
+               />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/view_user"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_selector">
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:src="@drawable/head"/>
+                <TextView
+                    android:textSize="18.0dip"
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="雨琪"
+                    />
+                <TextView
+                    android:id="@+id/tvphone"
+                    android:textSize="14.0dip"
+                    style="@style/txt_ContextStyle1"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tvname"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="手机号：13651772333" />
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right"/>
+            </RelativeLayout>
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/ac_help"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_ac_help"
+                android:drawableRight="@drawable/right"
+                android:text="帮助中心"/>
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <TextView
+                android:id="@+id/ac_customerService"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_ac_helper"
+                android:drawableRight="@drawable/right"
+                android:text="客服"/>
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <TextView
+                android:id="@+id/ac_more"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_ac_more"
+                android:drawableRight="@drawable/right"
+                android:text="更多"/>
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <TextView
+                android:id="@+id/ac_setting"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/icon_ac_setup"
+                android:drawableRight="@drawable/right"
+                android:text="设置" />
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
