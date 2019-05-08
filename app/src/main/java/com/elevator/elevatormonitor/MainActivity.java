@@ -10,10 +10,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.elevator.elevatormonitor.view.Fragment.AccountFragment;
-import com.elevator.elevatormonitor.view.Fragment.HomeFragment;
-import com.elevator.elevatormonitor.view.Fragment.InformationFragment;
-import com.elevator.elevatormonitor.view.Fragment.NoticeFragment;
+import com.elevator.elevatormonitor.Fragment.AccountFragment;
+import com.elevator.elevatormonitor.Fragment.HomeFragment;
+import com.elevator.elevatormonitor.Fragment.InformationFragment;
+import com.elevator.elevatormonitor.Fragment.NoticeFragment;
 
 import java.util.ArrayList;
 import java.util.List;

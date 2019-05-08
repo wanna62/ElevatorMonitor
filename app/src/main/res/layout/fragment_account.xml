@@ -16,7 +16,7 @@
             android:layout_height="wrap_content">
 
            <View
-               android:background="@color/black"
+               android:background="@color/divide"
                android:layout_width="match_parent"
                android:layout_height="1px"
                />
@@ -62,7 +62,7 @@
                     android:background="@drawable/right"/>
             </RelativeLayout>
             <View
-                android:background="@color/black"
+                android:background="@color/divide"
                 android:layout_width="match_parent"
                 android:layout_height="1px"/>
             <TextView
@@ -81,7 +81,7 @@
                 android:drawableRight="@drawable/right"
                 android:text="帮助中心"/>
             <View
-                android:background="@color/black"
+                android:background="@color/divide"
                 android:layout_width="match_parent"
                 android:layout_height="1px"/>
 
@@ -100,7 +100,7 @@
                 android:drawableRight="@drawable/right"
                 android:text="客服"/>
             <View
-                android:background="@color/black"
+                android:background="@color/divide"
                 android:layout_width="match_parent"
                 android:layout_height="1px"/>
 
@@ -119,7 +119,7 @@
                 android:drawableRight="@drawable/right"
                 android:text="更多"/>
             <View
-                android:background="@color/black"
+                android:background="@color/divide"
                 android:layout_width="match_parent"
                 android:layout_height="1px" />
 
@@ -139,7 +139,7 @@
                 android:drawableRight="@drawable/right"
                 android:text="设置" />
             <View
-                android:background="@color/black"
+                android:background="@color/divide"
                 android:layout_width="match_parent"
                 android:layout_height="1px" />
 

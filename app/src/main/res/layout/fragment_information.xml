@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/view_informatio">
-    </ListView>
+        android:gravity="center"
+        android:text="信息管理"
+        android:textColor="@color/theme"
+        android:textSize="23sp" />
 
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.elevator.elevatormonitor.view.Fragment;
+package com.elevator.elevatormonitor.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,10 +10,12 @@ import android.view.ViewGroup;
 
 import com.elevator.elevatormonitor.R;
 
-public class NoticeFragment extends Fragment {
+public class AccountFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_notice,container,false);
+        View view=inflater.inflate(R.layout.fragment_account,container,false);
+        return view;
     }
 }
