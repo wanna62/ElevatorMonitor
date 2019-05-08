@@ -2,13 +2,13 @@ package com.elevator.elevatormonitor;
 
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.elevator.elevatormonitor.Fragment.AccountFragment;
 import com.elevator.elevatormonitor.Fragment.HomeFragment;
@@ -80,4 +80,5 @@ public class MainActivity extends AppCompatActivity{
         transaction.show(currentFragment);
         transaction.commitAllowingStateLoss();
     }
+
 }

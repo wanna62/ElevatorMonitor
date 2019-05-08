@@ -3,11 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <ListView
+        android:id="@+id/listNotice"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="通知"
-        android:textColor="@color/theme"
-        android:textSize="23sp" />
+        android:layout_height="match_parent">
+
+    </ListView>
 </android.support.constraint.ConstraintLayout>

@@ -5,11 +5,18 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.elevator.elevatormonitor.Retrofit.RetrofitUtils;
+import com.elevator.elevatormonitor.beans.BaseResponse;
+import com.elevator.elevatormonitor.beans.LoginBean;
+
+import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
     private TextView title_back;
@@ -24,11 +31,10 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        init();
     }
     private void init(){
         title_back=findViewById(R.id.title_back);
-        title_back.setText("注册");
         go_back=findViewById(R.id.go_back);
         title_bar=findViewById(R.id.title_bar);
         title_bar.setBackgroundColor(Color.TRANSPARENT);
@@ -39,10 +45,26 @@ public class RegisterActivity extends AppCompatActivity {
         go_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RegisterActivity.this.finish();
+               finish();
             }
         });
 
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RetrofitUtils.register("test","18812345678",new RegisterBack());
+            }
+        });
+    }
 
+    private class RegisterBack implements RetrofitUtils.CallBack{
+        public void onSuccess(Response<BaseResponse> baseResponse){
+            Log.e("111111--->>>","onSuccess:");
+        }
+
+        @Override
+        public void onFail(Throwable t) {
+            Log.e("111111--->>>","onFail:");
+        }
     }
 }

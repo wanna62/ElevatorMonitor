@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.elevator.elevatormonitor.R;
+
 public class InformationFragment extends Fragment {
     @Nullable
     @Override
