@@ -6,4 +6,7 @@
 
     <color name="theme">#03A9F4</color>
     <color name="bottom_navigation_normal">#CCCCCC</color>
+
+    <color name="divide">#ffeeeeee</color>
+    <color name="white">#ffffff</color>
 </resources>

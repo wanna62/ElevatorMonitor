@@ -5,27 +5,27 @@
     <item
         android:id="@+id/navigation_home"
         android:enabled="true"
-        android:icon="@drawable/home"
+        android:icon="@drawable/icon_home"
         app:showAsAction="ifRoom"
-        android:title="首页"/>
+        android:title="@string/home"/>
     <item
         android:id="@+id/navigation_notice"
         android:enabled="true"
-        android:icon="@drawable/notice"
+        android:icon="@drawable/icon_notice"
         app:showAsAction="ifRoom"
-        android:title="通知"
+        android:title="@string/notice"
         />
     <item
         android:id="@+id/navigation_information"
         android:enabled="true"
-        android:icon="@drawable/information"
+        android:icon="@drawable/icon_information"
         app:showAsAction="ifRoom"
-        android:title="电梯信息"/>
+        android:title="@string/information"/>
     <item
         android:id="@+id/navigation_account"
         android:enabled="true"
-        android:icon="@drawable/account"
+        android:icon="@drawable/icon_account"
         app:showAsAction="ifRoom"
-        android:title="我"/>
+        android:title="@string/account"/>
 
 </menu>
